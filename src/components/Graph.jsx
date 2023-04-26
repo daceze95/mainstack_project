@@ -1,5 +1,6 @@
 import React from 'react';
 import Days from './DaysButton.jsx';
+import {help} from '../constant'
 
 const Graph = () => {
   return (
@@ -9,7 +10,9 @@ const Graph = () => {
         <>
           <div className='flex justify-between items-center'>
             <h3 className='font-bold'>Page views</h3>
-            <span className='hidden md:block'>help</span>
+            <span className='hidden md:block'>
+                <img src={help} alt=''/>
+            </span>
           </div>
           <p className='text-sm text-gray-400'>All Time</p>
         </>
